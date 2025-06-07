@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --primary: 0 72.2% 70.6%;
+  --primary-foreground: 355.7 100% 97.3%;
+  --secondary: 170.8 78.2% 55.1%;
+  --secondary-foreground: 240 5.9% 10%;
+  --accent: 49.7 100% 68.6%;
+  --accent-foreground: 240 5.9% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 5% 64.9%;
+  --radius: 0.5rem;
+  
+  /* Grade colors */
+  --prek: 32.6 100% 55.9%;
+  --kinder: 348.1 100% 65.1%;
+  --grade1: 262.1 100% 39.4%;
+  --grade2: 191.6 85.7% 61.8%;
+  --grade3: 86.4 59.4% 46.9%;
+  --grade4: 203.1 74.5% 44.3%;
+  --grade5: 267.7 31.7% 43.5%;
+  --grade6: 334.1 93.8% 68.2%;
+  --success: 160 95.8% 39.2%;
+  --error: 352.3 71.7% 55.9%;
+  --warning: 42.3 95.9% 63.5%;
+  --dark: 216 8.9% 23.1%;
+  --light: 210 20% 98%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html, body {
+    font-family: 'Open Sans', sans-serif;
+    @apply bg-[#F8F9FA] text-foreground;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif;
+    @apply font-bold;
+  }
+  
+  .font-game {
+    font-family: 'Fredoka One', cursive;
+  }
+  
+  .font-heading {
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .font-body {
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Animations */
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  .float-animation {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  /* Grade colors */
+  .bg-prek {
+    background-color: hsl(var(--prek));
+  }
+  
+  .bg-kinder {
+    background-color: hsl(var(--kinder));
+  }
+  
+  .bg-grade1 {
+    background-color: hsl(var(--grade1));
+  }
+  
+  .bg-grade2 {
+    background-color: hsl(var(--grade2));
+  }
+  
+  .bg-grade3 {
+    background-color: hsl(var(--grade3));
+  }
+  
+  .bg-grade4 {
+    background-color: hsl(var(--grade4));
+  }
+  
+  .bg-grade5 {
+    background-color: hsl(var(--grade5));
+  }
+  
+  .bg-grade6 {
+    background-color: hsl(var(--grade6));
+  }
+  
+  .text-prek {
+    color: hsl(var(--prek));
+  }
+  
+  .text-kinder {
+    color: hsl(var(--kinder));
+  }
+  
+  .text-grade1 {
+    color: hsl(var(--grade1));
+  }
+  
+  .text-grade2 {
+    color: hsl(var(--grade2));
+  }
+  
+  .text-grade3 {
+    color: hsl(var(--grade3));
+  }
+  
+  .text-grade4 {
+    color: hsl(var(--grade4));
+  }
+  
+  .text-grade5 {
+    color: hsl(var(--grade5));
+  }
+  
+  .text-grade6 {
+    color: hsl(var(--grade6));
+  }
+  
+  .border-prek {
+    border-color: hsl(var(--prek));
+  }
+  
+  .badge-glow {
+    box-shadow: 0 0 10px rgba(255, 209, 102, 0.7);
+  }
+  
+  .grade-tab.active {
+    transform: translateY(-5px);
+  }
+  
+  .game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  }
+  
+  /* Hide scrollbar but allow scrolling */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
+  }
+}
