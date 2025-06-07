@@ -1,0 +1,117 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="magicGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6c5ce7"/>
+      <stop offset="50%" style="stop-color:#a29bfe"/>
+      <stop offset="100%" style="stop-color:#fd79a8"/>
+    </linearGradient>
+    <linearGradient id="wizardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0984e3"/>
+      <stop offset="100%" style="stop-color:#74b9ff"/>
+    </linearGradient>
+    <radialGradient id="potionGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00b894"/>
+      <stop offset="100%" style="stop-color:#00a085"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Magic background -->
+  <rect width="300" height="200" fill="url(#magicGradient)"/>
+  
+  <!-- Stars -->
+  <circle cx="50" cy="30" r="2" fill="#fdcb6e"/>
+  <circle cx="250" cy="40" r="1.5" fill="#fff"/>
+  <circle cx="280" cy="70" r="2" fill="#fdcb6e"/>
+  <circle cx="30" cy="80" r="1.5" fill="#fff"/>
+  
+  <!-- Wizard -->
+  <g transform="translate(150,120)">
+    <!-- Wizard robe -->
+    <path d="M0,20 Q-20,30 -15,60 L15,60 Q20,30 0,20" fill="url(#wizardGradient)"/>
+    <!-- Head -->
+    <circle cx="0" cy="0" r="12" fill="#ffeaa7"/>
+    <!-- Wizard hat -->
+    <path d="M-10,-5 Q0,-25 10,-5" fill="#6c5ce7"/>
+    <circle cx="0" cy="-20" r="3" fill="#fdcb6e"/>
+    <!-- Beard -->
+    <path d="M-8,5 Q0,15 8,5 Q5,12 0,18 Q-5,12 -8,5" fill="#ddd"/>
+    <!-- Eyes -->
+    <circle cx="-4" cy="-2" r="1.5" fill="#2d3436"/>
+    <circle cx="4" cy="-2" r="1.5" fill="#2d3436"/>
+    <!-- Arms -->
+    <ellipse cx="-18" cy="15" rx="4" ry="10" fill="#ffeaa7"/>
+    <ellipse cx="18" cy="15" rx="4" ry="10" fill="#ffeaa7"/>
+  </g>
+  
+  <!-- Magic wand -->
+  <line x1="170" y1="135" x2="190" y2="115" stroke="#8b4513" stroke-width="3"/>
+  <circle cx="190" cy="115" r="4" fill="#fdcb6e"/>
+  
+  <!-- Measuring tools -->
+  <g transform="translate(80,80)">
+    <!-- Ruler -->
+    <rect x="0" y="0" width="40" height="6" fill="#fdcb6e"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2d3436" stroke-width="1"/>
+    <line x1="10" y1="0" x2="10" y2="6" stroke="#2d3436" stroke-width="1"/>
+    <line x1="20" y1="0" x2="20" y2="6" stroke="#2d3436" stroke-width="1"/>
+    <line x1="30" y1="0" x2="30" y2="6" stroke="#2d3436" stroke-width="1"/>
+    <line x1="40" y1="0" x2="40" y2="6" stroke="#2d3436" stroke-width="1"/>
+    <text x="20" y="15" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" fill="#fff">12 inches</text>
+  </g>
+  
+  <g transform="translate(200,90)">
+    <!-- Measuring cup -->
+    <path d="M0,0 L0,20 Q0,25 5,25 L15,25 Q20,25 20,20 L20,0" fill="#74b9ff" stroke="#0984e3" stroke-width="2"/>
+    <rect x="2" y="8" width="16" height="12" fill="url(#potionGlow)"/>
+    <line x1="0" y1="5" x2="20" y2="5" stroke="#0984e3" stroke-width="1"/>
+    <line x1="0" y1="10" x2="20" y2="10" stroke="#0984e3" stroke-width="1"/>
+    <line x1="0" y1="15" x2="20" y2="15" stroke="#0984e3" stroke-width="1"/>
+    <text x="10" y="35" text-anchor="middle" font-family="Arial" font-size="7" font-weight="bold" fill="#fff">2 cups</text>
+  </g>
+  
+  <g transform="translate(60,140)">
+    <!-- Scale -->
+    <rect x="0" y="10" width="30" height="4" fill="#636e72"/>
+    <line x1="15" y1="0" x2="15" y2="14" stroke="#2d3436" stroke-width="2"/>
+    <circle cx="5" cy="10" r="5" fill="#e17055"/>
+    <circle cx="25" cy="10" r="5" fill="#00b894"/>
+    <text x="15" y="25" text-anchor="middle" font-family="Arial" font-size="7" font-weight="bold" fill="#fff">5 pounds</text>
+  </g>
+  
+  <!-- Magic potion bottles -->
+  <g transform="translate(220,140)">
+    <rect x="0" y="5" width="8" height="15" rx="1" fill="#e74c3c"/>
+    <rect x="1" y="7" width="6" height="10" fill="#fd79a8"/>
+    <circle cx="4" cy="3" r="3" fill="#636e72"/>
+    
+    <rect x="12" y="8" width="6" height="12" rx="1" fill="#00b894"/>
+    <rect x="13" y="10" width="4" height="8" fill="url(#potionGlow)"/>
+    <circle cx="15" cy="6" r="2" fill="#636e72"/>
+  </g>
+  
+  <!-- Measurement labels floating -->
+  <g transform="translate(120,50)">
+    <rect x="-20" y="-8" width="40" height="16" rx="8" fill="#fff" opacity="0.9"/>
+    <text x="0" y="2" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#6c5ce7">Length</text>
+  </g>
+  
+  <g transform="translate(40,110)">
+    <rect x="-15" y="-8" width="30" height="16" rx="8" fill="#fdcb6e" opacity="0.9"/>
+    <text x="0" y="2" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#2d3436">Weight</text>
+  </g>
+  
+  <g transform="translate(230,60)">
+    <rect x="-15" y="-8" width="30" height="16" rx="8" fill="#00b894" opacity="0.9"/>
+    <text x="0" y="2" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#fff">Volume</text>
+  </g>
+  
+  <!-- Magic sparkles -->
+  <circle cx="100" cy="60" r="2" fill="#fd79a8"/>
+  <circle cx="180" cy="50" r="1.5" fill="#fdcb6e"/>
+  <circle cx="250" cy="80" r="2" fill="#fd79a8"/>
+  <circle cx="70" cy="100" r="1.5" fill="#a29bfe"/>
+  
+  <!-- Title -->
+  <rect x="10" y="160" width="280" height="30" rx="15" fill="rgba(0,0,0,0.7)"/>
+  <text x="150" y="180" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#fff">Magical Measuring Wizard</text>
+</svg>

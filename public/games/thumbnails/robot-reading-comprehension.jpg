@@ -1,0 +1,98 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="labGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#74b9ff"/>
+      <stop offset="50%" style="stop-color:#0984e3"/>
+      <stop offset="100%" style="stop-color:#2d3436"/>
+    </linearGradient>
+    <linearGradient id="robotGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#636e72"/>
+      <stop offset="100%" style="stop-color:#2d3436"/>
+    </linearGradient>
+    <radialGradient id="screenGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00b894"/>
+      <stop offset="100%" style="stop-color:#00a085"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Lab background -->
+  <rect width="300" height="200" fill="url(#labGradient)"/>
+  
+  <!-- Computer screens in background -->
+  <rect x="20" y="60" width="40" height="30" rx="3" fill="#2d3436"/>
+  <rect x="22" y="62" width="36" height="26" fill="url(#screenGlow)"/>
+  
+  <rect x="240" y="70" width="35" height="25" rx="3" fill="#2d3436"/>
+  <rect x="242" y="72" width="31" height="21" fill="url(#screenGlow)"/>
+  
+  <!-- Robot -->
+  <g transform="translate(150,100)">
+    <!-- Robot body -->
+    <rect x="-20" y="-10" width="40" height="50" rx="5" fill="url(#robotGradient)"/>
+    <!-- Robot head -->
+    <rect x="-15" y="-35" width="30" height="25" rx="12" fill="url(#robotGradient)"/>
+    <!-- Eyes -->
+    <circle cx="-8" cy="-22" r="4" fill="#00b894"/>
+    <circle cx="8" cy="-22" r="4" fill="#00b894"/>
+    <circle cx="-8" cy="-22" r="2" fill="#fff"/>
+    <circle cx="8" cy="-22" r="2" fill="#fff"/>
+    <!-- Mouth -->
+    <rect x="-6" y="-15" width="12" height="3" rx="1.5" fill="#fd79a8"/>
+    <!-- Antenna -->
+    <line x1="0" y1="-35" x2="0" y2="-45" stroke="#fdcb6e" stroke-width="2"/>
+    <circle cx="0" cy="-45" r="3" fill="#e17055"/>
+    <!-- Arms -->
+    <rect x="-30" y="-5" width="10" height="20" rx="5" fill="url(#robotGradient)"/>
+    <rect x="20" y="-5" width="10" height="20" rx="5" fill="url(#robotGradient)"/>
+    <!-- Hands -->
+    <circle cx="-25" cy="20" r="5" fill="#636e72"/>
+    <circle cx="25" cy="20" r="5" fill="#636e72"/>
+    <!-- Legs -->
+    <rect x="-15" y="40" width="8" height="20" rx="4" fill="url(#robotGradient)"/>
+    <rect x="7" y="40" width="8" height="20" rx="4" fill="url(#robotGradient)"/>
+    <!-- Feet -->
+    <ellipse cx="-11" cy="65" rx="8" ry="3" fill="#2d3436"/>
+    <ellipse cx="11" cy="65" rx="8" ry="3" fill="#2d3436"/>
+    <!-- Chest panel -->
+    <rect x="-10" y="5" width="20" height="15" rx="3" fill="#00b894"/>
+    <circle cx="0" cy="12" r="3" fill="#fdcb6e"/>
+  </g>
+  
+  <!-- Book/Story -->
+  <g transform="translate(80,130)">
+    <rect x="0" y="0" width="30" height="20" fill="#fff" stroke="#2d3436" stroke-width="1"/>
+    <line x1="5" y1="5" x2="25" y2="5" stroke="#2d3436" stroke-width="1"/>
+    <line x1="5" y1="8" x2="20" y2="8" stroke="#2d3436" stroke-width="1"/>
+    <line x1="5" y1="11" x2="25" y2="11" stroke="#2d3436" stroke-width="1"/>
+    <line x1="5" y1="14" x2="18" y2="14" stroke="#2d3436" stroke-width="1"/>
+  </g>
+  
+  <!-- Question bubbles -->
+  <g transform="translate(220,60)">
+    <ellipse cx="0" cy="0" rx="25" ry="15" fill="#fff" opacity="0.9"/>
+    <text x="0" y="-3" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" fill="#2d3436">Who was</text>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" fill="#2d3436">the main</text>
+    <text x="0" y="13" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" fill="#2d3436">character?</text>
+    <polygon points="-15,12 -10,20 -5,12" fill="#fff"/>
+  </g>
+  
+  <g transform="translate(50,80)">
+    <ellipse cx="0" cy="0" rx="20" ry="12" fill="#fdcb6e" opacity="0.9"/>
+    <text x="0" y="-2" text-anchor="middle" font-family="Arial" font-size="7" font-weight="bold" fill="#2d3436">Where did</text>
+    <text x="0" y="6" text-anchor="middle" font-family="Arial" font-size="7" font-weight="bold" fill="#2d3436">it happen?</text>
+    <polygon points="15,8 20,15 10,10" fill="#fdcb6e"/>
+  </g>
+  
+  <!-- Power indicators -->
+  <circle cx="100" cy="50" r="3" fill="#00b894"/>
+  <circle cx="110" cy="45" r="2" fill="#fd79a8"/>
+  <circle cx="200" cy="40" r="2.5" fill="#00b894"/>
+  
+  <!-- Circuit lines -->
+  <path d="M120,120 Q140,110 160,120" stroke="#fdcb6e" stroke-width="2" fill="none"/>
+  <path d="M180,110 Q200,100 220,110" stroke="#00b894" stroke-width="2" fill="none"/>
+  
+  <!-- Title -->
+  <rect x="10" y="160" width="280" height="30" rx="15" fill="rgba(0,0,0,0.7)"/>
+  <text x="150" y="180" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="#fff">Robot Reading Comprehension</text>
+</svg>

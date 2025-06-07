@@ -1,0 +1,87 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cityGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#74b9ff"/>
+      <stop offset="50%" style="stop-color:#0984e3"/>
+      <stop offset="100%" style="stop-color:#2d3436"/>
+    </linearGradient>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e17055"/>
+      <stop offset="50%" style="stop-color:#d63031"/>
+      <stop offset="100%" style="stop-color:#74b9ff"/>
+    </linearGradient>
+    <radialGradient id="powerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fdcb6e"/>
+      <stop offset="100%" style="stop-color:#f39c12"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- City background -->
+  <rect width="300" height="200" fill="url(#cityGradient)"/>
+  
+  <!-- City buildings -->
+  <rect x="0" y="120" width="50" height="80" fill="#636e72"/>
+  <rect x="60" y="100" width="40" height="100" fill="#2d3436"/>
+  <rect x="110" y="110" width="35" height="90" fill="#636e72"/>
+  <rect x="200" y="90" width="45" height="110" fill="#2d3436"/>
+  <rect x="250" y="105" width="50" height="95" fill="#636e72"/>
+  
+  <!-- Building windows -->
+  <rect x="10" y="130" width="8" height="10" fill="#fdcb6e"/>
+  <rect x="25" y="140" width="8" height="10" fill="#fdcb6e"/>
+  <rect x="70" y="120" width="6" height="8" fill="#fdcb6e"/>
+  <rect x="220" y="110" width="8" height="10" fill="#fdcb6e"/>
+  <rect x="260" y="125" width="8" height="10" fill="#fdcb6e"/>
+  
+  <!-- Superhero -->
+  <g transform="translate(150,80)">
+    <!-- Cape -->
+    <path d="M-15,10 Q-25,15 -20,40 Q-15,50 -5,45 L5,20" fill="#e17055"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="25" rx="12" ry="20" fill="url(#heroGradient)"/>
+    <!-- Head -->
+    <circle cx="0" cy="5" r="10" fill="#ffeaa7"/>
+    <!-- Mask -->
+    <path d="M-8,2 Q0,-2 8,2 Q6,8 0,10 Q-6,8 -8,2" fill="#d63031"/>
+    <!-- Eyes -->
+    <circle cx="-3" cy="4" r="1" fill="#fff"/>
+    <circle cx="3" cy="4" r="1" fill="#fff"/>
+    <!-- Arms -->
+    <ellipse cx="-15" cy="20" rx="5" ry="12" fill="#ffeaa7"/>
+    <ellipse cx="15" cy="20" rx="5" ry="12" fill="#ffeaa7"/>
+    <!-- Legs -->
+    <ellipse cx="-6" cy="50" rx="4" ry="15" fill="#74b9ff"/>
+    <ellipse cx="6" cy="50" rx="4" ry="15" fill="#74b9ff"/>
+    <!-- Chest emblem -->
+    <circle cx="0" cy="18" r="6" fill="#fdcb6e"/>
+    <text x="0" y="22" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" fill="#d63031">S</text>
+  </g>
+  
+  <!-- Flying words with power effects -->
+  <g transform="translate(80,50)">
+    <circle cx="0" cy="0" r="15" fill="url(#powerGlow)" opacity="0.7"/>
+    <rect x="-12" y="-6" width="24" height="12" rx="6" fill="#fff"/>
+    <text x="0" y="2" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#2d3436">THE</text>
+  </g>
+  
+  <g transform="translate(220,60)">
+    <circle cx="0" cy="0" r="18" fill="url(#powerGlow)" opacity="0.7"/>
+    <rect x="-15" y="-6" width="30" height="12" rx="6" fill="#fff"/>
+    <text x="0" y="2" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#2d3436">SAID</text>
+  </g>
+  
+  <g transform="translate(50,120)">
+    <circle cx="0" cy="0" r="16" fill="url(#powerGlow)" opacity="0.7"/>
+    <rect x="-14" y="-6" width="28" height="12" rx="6" fill="#fff"/>
+    <text x="0" y="2" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#2d3436">THEY</text>
+  </g>
+  
+  <!-- Power burst effects -->
+  <circle cx="120" cy="70" r="3" fill="#fd79a8"/>
+  <circle cx="180" cy="45" r="2" fill="#a29bfe"/>
+  <circle cx="90" cy="90" r="2.5" fill="#fd79a8"/>
+  
+  <!-- Title -->
+  <rect x="10" y="160" width="280" height="30" rx="15" fill="rgba(0,0,0,0.7)"/>
+  <text x="150" y="180" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#fff">Superhero Sight Words</text>
+</svg>

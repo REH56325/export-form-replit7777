@@ -1,0 +1,111 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gardenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00b894"/>
+      <stop offset="50%" style="stop-color:#00a085"/>
+      <stop offset="100%" style="stop-color:#55a3ff"/>
+    </linearGradient>
+    <radialGradient id="butterflyGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fd79a8"/>
+      <stop offset="100%" style="stop-color:#e84393"/>
+    </radialGradient>
+    <linearGradient id="flowerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdcb6e"/>
+      <stop offset="100%" style="stop-color:#f39c12"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Garden background -->
+  <rect width="300" height="200" fill="url(#gardenGradient)"/>
+  
+  <!-- Grass -->
+  <ellipse cx="150" cy="180" rx="150" ry="20" fill="#00b894"/>
+  
+  <!-- Flowers with different shapes -->
+  <g transform="translate(60,140)">
+    <!-- Circle flower -->
+    <circle cx="0" cy="0" r="8" fill="url(#flowerGradient)"/>
+    <circle cx="0" cy="0" r="4" fill="#e17055"/>
+    <rect x="-1" y="8" width="2" height="15" fill="#27ae60"/>
+    <text x="0" y="35" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#fff">○</text>
+  </g>
+  
+  <g transform="translate(120,150)">
+    <!-- Triangle flower -->
+    <polygon points="0,-8 -7,6 7,6" fill="#e74c3c"/>
+    <circle cx="0" cy="0" r="3" fill="#fdcb6e"/>
+    <rect x="-1" y="6" width="2" height="12" fill="#27ae60"/>
+    <text x="0" y="30" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#fff">△</text>
+  </g>
+  
+  <g transform="translate(200,145)">
+    <!-- Square flower -->
+    <rect x="-6" y="-6" width="12" height="12" fill="#a29bfe"/>
+    <circle cx="0" cy="0" r="3" fill="#fd79a8"/>
+    <rect x="-1" y="6" width="2" height="12" fill="#27ae60"/>
+    <text x="0" y="30" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#fff">□</text>
+  </g>
+  
+  <!-- Butterflies -->
+  <g transform="translate(80,80)">
+    <!-- Butterfly 1 -->
+    <ellipse cx="-5" cy="-3" rx="8" ry="12" fill="url(#butterflyGradient)" transform="rotate(-15)"/>
+    <ellipse cx="5" cy="-3" rx="8" ry="12" fill="url(#butterflyGradient)" transform="rotate(15)"/>
+    <ellipse cx="-3" cy="8" rx="5" ry="8" fill="#fd79a8" transform="rotate(-15)"/>
+    <ellipse cx="3" cy="8" rx="5" ry="8" fill="#fd79a8" transform="rotate(15)"/>
+    <line x1="0" y1="-5" x2="0" y2="15" stroke="#2d3436" stroke-width="2"/>
+    <circle cx="-1" cy="-3" r="1" fill="#2d3436"/>
+    <circle cx="1" cy="-3" r="1" fill="#2d3436"/>
+    <!-- Wing patterns -->
+    <circle cx="-3" cy="0" r="2" fill="#fff" opacity="0.7"/>
+    <circle cx="3" cy="0" r="2" fill="#fff" opacity="0.7"/>
+  </g>
+  
+  <g transform="translate(180,60)">
+    <!-- Butterfly 2 -->
+    <ellipse cx="-4" cy="-2" rx="7" ry="10" fill="#74b9ff" transform="rotate(-10)"/>
+    <ellipse cx="4" cy="-2" rx="7" ry="10" fill="#74b9ff" transform="rotate(10)"/>
+    <ellipse cx="-2" cy="6" rx="4" ry="6" fill="#0984e3" transform="rotate(-10)"/>
+    <ellipse cx="2" cy="6" rx="4" ry="6" fill="#0984e3" transform="rotate(10)"/>
+    <line x1="0" y1="-3" x2="0" y2="12" stroke="#2d3436" stroke-width="1.5"/>
+    <circle cx="-0.5" cy="-2" r="0.8" fill="#2d3436"/>
+    <circle cx="0.5" cy="-2" r="0.8" fill="#2d3436"/>
+  </g>
+  
+  <g transform="translate(240,100)">
+    <!-- Butterfly 3 -->
+    <ellipse cx="-4" cy="-2" rx="6" ry="9" fill="#00b894" transform="rotate(-20)"/>
+    <ellipse cx="4" cy="-2" rx="6" ry="9" fill="#00b894" transform="rotate(20)"/>
+    <ellipse cx="-2" cy="5" rx="3" ry="5" fill="#00a085" transform="rotate(-20)"/>
+    <ellipse cx="2" cy="5" rx="3" ry="5" fill="#00a085" transform="rotate(20)"/>
+    <line x1="0" y1="-2" x2="0" y2="10" stroke="#2d3436" stroke-width="1.5"/>
+    <circle cx="-0.5" cy="-1" r="0.7" fill="#2d3436"/>
+    <circle cx="0.5" cy="-1" r="0.7" fill="#2d3436"/>
+  </g>
+  
+  <!-- 3D Shapes floating -->
+  <g transform="translate(40,60)">
+    <!-- Cube -->
+    <polygon points="0,0 15,0 20,-5 5,-5" fill="#ddd"/>
+    <polygon points="0,0 0,15 5,10 5,-5" fill="#bbb"/>
+    <polygon points="15,0 15,15 20,10 20,-5" fill="#999"/>
+    <text x="25" y="8" font-family="Arial" font-size="8" font-weight="bold" fill="#fff">Cube</text>
+  </g>
+  
+  <g transform="translate(220,40)">
+    <!-- Sphere -->
+    <circle cx="0" cy="0" r="10" fill="#e74c3c"/>
+    <ellipse cx="-3" cy="-3" rx="4" ry="2" fill="#ff7675" opacity="0.7"/>
+    <text x="15" y="5" font-family="Arial" font-size="8" font-weight="bold" fill="#fff">Sphere</text>
+  </g>
+  
+  <!-- Shape labels floating -->
+  <g transform="translate(150,30)">
+    <rect x="-25" y="-8" width="50" height="16" rx="8" fill="#fff" opacity="0.9"/>
+    <text x="0" y="2" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#6c5ce7">Find the Shapes!</text>
+  </g>
+  
+  <!-- Title -->
+  <rect x="10" y="160" width="280" height="30" rx="15" fill="rgba(0,0,0,0.7)"/>
+  <text x="150" y="180" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#fff">Butterfly Garden Shapes</text>
+</svg>

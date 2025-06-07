@@ -1,0 +1,102 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="restaurantGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fd79a8"/>
+      <stop offset="50%" style="stop-color:#fdcb6e"/>
+      <stop offset="100%" style="stop-color:#e17055"/>
+    </linearGradient>
+    <linearGradient id="pizzaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdcb6e"/>
+      <stop offset="100%" style="stop-color:#f39c12"/>
+    </linearGradient>
+    <radialGradient id="coinGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#f1c40f"/>
+      <stop offset="100%" style="stop-color:#d68910"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Restaurant background -->
+  <rect width="300" height="200" fill="url(#restaurantGradient)"/>
+  
+  <!-- Counter -->
+  <rect x="0" y="140" width="300" height="60" fill="#8b4513"/>
+  <rect x="0" y="140" width="300" height="15" fill="#a0522d"/>
+  
+  <!-- Pizza -->
+  <g transform="translate(80,90)">
+    <circle cx="0" cy="0" r="25" fill="url(#pizzaGradient)"/>
+    <!-- Pizza crust -->
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#d35400" stroke-width="3"/>
+    <!-- Toppings -->
+    <circle cx="-8" cy="-5" r="3" fill="#e74c3c"/>
+    <circle cx="8" cy="3" r="3" fill="#e74c3c"/>
+    <circle cx="0" cy="8" r="3" fill="#27ae60"/>
+    <circle cx="-5" cy="10" r="2" fill="#f39c12"/>
+    <circle cx="10" cy="-8" r="2" fill="#27ae60"/>
+    <!-- Pizza slice lines -->
+    <line x1="0" y1="0" x2="0" y2="-25" stroke="#d35400" stroke-width="1"/>
+    <line x1="0" y1="0" x2="18" y2="-17" stroke="#d35400" stroke-width="1"/>
+    <line x1="0" y1="0" x2="22" y2="12" stroke="#d35400" stroke-width="1"/>
+    <line x1="0" y1="0" x2="-18" y2="17" stroke="#d35400" stroke-width="1"/>
+  </g>
+  
+  <!-- Cash register -->
+  <g transform="translate(200,100)">
+    <rect x="0" y="0" width="40" height="30" rx="5" fill="#2d3436"/>
+    <rect x="5" y="5" width="30" height="15" fill="#74b9ff"/>
+    <rect x="8" y="8" width="24" height="9" fill="#ddd"/>
+    <text x="20" y="15" text-anchor="middle" font-family="Arial" font-size="8" fill="#2d3436">$2.50</text>
+    <!-- Buttons -->
+    <circle cx="15" cy="25" r="2" fill="#00b894"/>
+    <circle cx="25" cy="25" r="2" fill="#fd79a8"/>
+  </g>
+  
+  <!-- Money -->
+  <g transform="translate(120,150)">
+    <!-- Dollar bills -->
+    <rect x="0" y="0" width="30" height="15" rx="2" fill="#00b894"/>
+    <text x="15" y="10" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" fill="#fff">$1</text>
+    
+    <rect x="35" y="-3" width="30" height="15" rx="2" fill="#00b894"/>
+    <text x="50" y="7" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" fill="#fff">$1</text>
+    
+    <!-- Coins -->
+    <circle cx="75" cy="8" r="6" fill="url(#coinGlow)"/>
+    <text x="75" y="11" text-anchor="middle" font-family="Arial" font-size="6" font-weight="bold" fill="#8b4513">25¢</text>
+    
+    <circle cx="90" cy="5" r="5" fill="#95a5a6"/>
+    <text x="90" y="8" text-anchor="middle" font-family="Arial" font-size="5" font-weight="bold" fill="#2d3436">10¢</text>
+    
+    <circle cx="105" cy="8" r="4" fill="#e67e22"/>
+    <text x="105" y="11" text-anchor="middle" font-family="Arial" font-size="4" font-weight="bold" fill="#fff">5¢</text>
+  </g>
+  
+  <!-- Chef character -->
+  <g transform="translate(250,80)">
+    <!-- Chef hat -->
+    <ellipse cx="0" cy="-15" rx="12" ry="8" fill="#fff"/>
+    <rect x="-8" y="-20" width="16" height="10" fill="#fff"/>
+    <!-- Head -->
+    <circle cx="0" cy="0" r="8" fill="#ffeaa7"/>
+    <!-- Eyes -->
+    <circle cx="-3" cy="-2" r="1" fill="#2d3436"/>
+    <circle cx="3" cy="-2" r="1" fill="#2d3436"/>
+    <!-- Smile -->
+    <path d="M-3,2 Q0,5 3,2" fill="none" stroke="#2d3436" stroke-width="1"/>
+    <!-- Body -->
+    <rect x="-6" y="8" width="12" height="20" fill="#fff"/>
+    <!-- Arms -->
+    <circle cx="-10" cy="15" r="3" fill="#ffeaa7"/>
+    <circle cx="10" cy="15" r="3" fill="#ffeaa7"/>
+  </g>
+  
+  <!-- Price tags -->
+  <g transform="translate(40,60)">
+    <rect x="0" y="0" width="35" height="15" rx="3" fill="#fff"/>
+    <text x="17" y="10" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#e17055">$2.50</text>
+  </g>
+  
+  <!-- Title -->
+  <rect x="10" y="160" width="280" height="30" rx="15" fill="rgba(0,0,0,0.7)"/>
+  <text x="150" y="180" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#fff">Pizza Place Money Math</text>
+</svg>
